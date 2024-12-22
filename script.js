@@ -25,7 +25,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     const hintParagraph = document.getElementById("hint");
 
     if (userInput === correctPassword) {
-        hintParagraph.textContent = "🎁 Your next clue: Text Me";
+        hintParagraph.textContent = "🎁 Your final challenge is: Xlsyklx M asyph kmzi csy e iewc gmtliv sv hmh M qier gmtlivw pqz rpmz (eabf) dqa d wvqk, kwz tzf vl xmzzq dqa mdml ";
         resultDiv.classList.remove("hidden");
     } else {
         hintParagraph.textContent = "❌ Incorrect, try again!";
