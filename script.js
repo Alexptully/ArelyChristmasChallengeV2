@@ -25,7 +25,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     const hintParagraph = document.getElementById("hint");
 
     if (userInput === correctPassword) {
-        hintParagraph.textContent = "🎁 Your next clue: 44 23 15  14 11 54  44 23";
+        hintParagraph.textContent = "🎁 Your next clue: Text Me";
         resultDiv.classList.remove("hidden");
     } else {
         hintParagraph.textContent = "❌ Incorrect, try again!";
