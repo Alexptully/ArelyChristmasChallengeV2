@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arely's Christmas Hunt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎄 Arely's Christmas Hunt 🎄</h1>
+        <p>aaba baabb baaaa abbaa abbab abbaa babba abbab baabb baaaa baabb abbab ababa baabb ababb aabaa aaaaa abbaa aaabb ababa abaaa baaab baaba aabaa abbaa</p>
+        <audio id="morseAudio" src="morse-code.mp3" autoplay loop></audio>
+        <div class="challenge">
+            <label for="userInput">Enter the decoded message (all lowercase):</label>
+            <input type="text" id="userInput" placeholder="Type here..." />
+            <button id="submitBtn">Submit</button>
+        </div>
+        <div id="result" class="hidden">
+            <p id="hint"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
