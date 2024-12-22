@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // Handle input and validation
 document.getElementById("submitBtn").addEventListener("click", function () {
     const userInput = document.getElementById("userInput").value.trim();
-    const correctPassword = "Italian Italian, and I love you";
+    const correctPassword = "italian italian and i love you";
     const resultDiv = document.getElementById("result");
     const hintParagraph = document.getElementById("hint");
 
