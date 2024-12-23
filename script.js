@@ -29,7 +29,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     if (userInput === correctPassword) {
         hintParagraph.textContent = "🎁 Your final challenge is: Xlsyklx M asyph kmzi csy e iewc gmtliv sv hmh M qier gmtlivw pqz rpmz (eabf) dqa d wvqk, kwz tzf vl xmzzq dqa mdml ";
         resultDiv.classList.remove("hidden");
-    if (userInput === hint1) {
+    } else (userInput === hint1) {
         hintParagraph.textContent = ".. - ... / -. --- - / - .... .- - / . .- ... -.-- / - .... . .-. . / .. ... / --- -. . / -- --- .-. . / ... - . .--. / -.-. .--. .--. .--- ... - ...- -.-- .... - - -.-. -.-. ..-. .-.. - ...- ...- .. -.-. - -.-. -. ... ..-. .. -.- --.- --- -..";
         resultDiv.classList.remove("hidden");
         
