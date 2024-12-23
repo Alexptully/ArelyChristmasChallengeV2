@@ -2,19 +2,19 @@
 const morseAudio = document.getElementById("morseAudio");
 
 // Try to autoplay when the page is loaded
-//window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
     // Attempt autoplay
-//    const playPromise = morseAudio.play();
+    const playPromise = morseAudio.play();
 
-//    if (playPromise !== undefined) {
-//        playPromise.catch(() => {
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
             // If autoplay fails, wait for user interaction
-//            console.log("Autoplay prevented. Waiting for user interaction...");
-//            document.body.addEventListener("click", () => {
-//                morseAudio.play();
-//            }, { once: true });
-//        });
-//    }
+            console.log("Autoplay prevented. Waiting for user interaction...");
+            document.body.addEventListener("click", () => {
+                morseAudio.play();
+            }, { once: true });
+        });
+    }
 });
 
 // Handle input and validation
@@ -32,7 +32,6 @@ document.getElementById("submitBtn").addEventListener("click", function () {
 //    } else if (userInput === hint1) {
 //        hintParagraph.textContent = ".. - ... / -. --- - / - .... .- - / . .- ... -.-- / - .... . .-. . / .. ... / --- -. . / -- --- .-. . / ... - . .--. / -.-. .--. .--. .--- ... - ...- -.-- .... - - -.-. -.-. ..-. .-.. - ...- ...- .. -.-. - -.-. -. ... ..-. .. -.- --.- --- -..";
 //        resultDiv.classList.remove("hidden");
-        
     } else {
         hintParagraph.textContent = "❌ Incorrect, try again!";
         resultDiv.classList.remove("hidden");
